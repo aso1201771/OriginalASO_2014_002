@@ -36,36 +36,30 @@
         android:layout_marginTop="53dp"
         android:ems="10" />
 
-    <LinearLayout
-        android:id="@+id/LinearLayout1"
+    <Button
+        android:id="@+id/hitokotoBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical" >
-
-        <Button
-            android:id="@+id/backBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="メンテ" />
-
-        <Button
-            android:id="@+id/deleteBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="登録" />
-    </LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:text="ひとことチェック" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/mainteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/LinearLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:text="ひとことチェック" />
+        android:layout_above="@+id/hitokotoBtn"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_marginBottom="45dp"
+        android:text="メンテ" />
+
+    <Button
+        android:id="@+id/entryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainteBtn"
+        android:layout_alignRight="@+id/editText1"
+        android:text="登録" />
 
 </RelativeLayout>
