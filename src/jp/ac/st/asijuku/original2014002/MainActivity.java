@@ -34,6 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		case R.id.mainteBtn:
 			Intent intent = new Intent(MainActivity.this, MaintenanceActivity.class);
 			startActivity(intent);
+		break;
 		}
 
 	}
