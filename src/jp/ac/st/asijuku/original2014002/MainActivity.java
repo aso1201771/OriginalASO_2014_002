@@ -20,6 +20,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		super.onResume();
 		Button mainteBtn = (Button)findViewById(R.id.mainteBtn);
 		mainteBtn.setOnClickListener(this);
+		Button hitokotoBtn = (Button)findViewById(R.id.hitokotoBtn);
+		hitokotoBtn.setOnClickListener(this);
 	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -30,9 +32,14 @@ public class MainActivity extends Activity implements View.OnClickListener{
 	@Override
 	public void onClick(View v) {
 		// TODO 自動生成されたメソッド・スタブ
+		Intent intent = null;
 		switch(v.getId()){
 		case R.id.mainteBtn:
-			Intent intent = new Intent(MainActivity.this, MaintenanceActivity.class);
+			intent = new Intent(MainActivity.this, MaintenanceActivity.class);
+			startActivity(intent);
+		break;
+		case R.id.hitokotoBtn:
+			intent = new Intent(MainActivity.this, HitokotoActivity.class);
 			startActivity(intent);
 		break;
 		}
