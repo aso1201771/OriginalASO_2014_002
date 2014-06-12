@@ -28,7 +28,7 @@
         android:text="ひとこと登録" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edtMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/hitokotoBtn"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignLeft="@+id/edtMsg"
         android:layout_marginBottom="45dp"
         android:text="メンテ" />
 
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/mainteBtn"
-        android:layout_alignRight="@+id/editText1"
+        android:layout_alignRight="@+id/edtMsg"
         android:text="登録" />
 
 </RelativeLayout>

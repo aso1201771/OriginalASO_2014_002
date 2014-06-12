@@ -3,33 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="72dp"
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/backBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="550px"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="84dp"
-        android:layout_marginLeft="65dp"
-        android:text="戻る" />
+        android:layout_alignParentTop="true" >
+    </ListView>
 
     <Button
         android:id="@+id/deleteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/backBtn"
-        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/listView1"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="22dp"
         android:layout_toRightOf="@+id/backBtn"
         android:text="削除" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deleteBtn"
+        android:layout_alignBottom="@+id/deleteBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="66dp"
+        android:text="戻る" />
 
 </RelativeLayout>
