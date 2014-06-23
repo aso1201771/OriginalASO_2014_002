@@ -4,7 +4,7 @@
     android:layout_height="match_parent" >
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/lstHitokoto"
         android:layout_width="match_parent"
         android:layout_height="550px"
         android:layout_alignParentLeft="true"
@@ -15,7 +15,7 @@
         android:id="@+id/deleteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/listView1"
+        android:layout_below="@+id/lstHitokoto"
         android:layout_marginLeft="47dp"
         android:layout_marginTop="22dp"
         android:layout_toRightOf="@+id/backBtn"
